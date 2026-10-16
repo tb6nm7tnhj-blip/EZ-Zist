@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>زیست خیلی آسان | دکتر علی تهرانی و رفضا</title>
+  <meta name="theme-color" content="#0D1B2A" />
+  <meta name="description" content="زیست دوازدهم به روش دکتر علی تهرانی و رفضا - فصل ۱ و ۲ با درسنامه، تصویر و آزمون" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="زیست آسان" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg" />
+  <link rel="apple-touch-icon" href="icons/icon-192.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0D1B2A;
+      --secondary: #1B263B;
+      --card: #1E2A3A;
+      --purple: #7B2CBF;
+      --purple-light: #9D4EDD;
+      --blue: #3A86FF;
+      --text: #E0E1DD;
+      --text-sec: #ADB5BD;
+      --success: #2EC4B6;
+      --error: #E63946;
+      --warning: #FFB703;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background: linear-gradient(160deg, #0D1B2A 0%, #1B263B 50%, #2D1B4E 100%);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      min-height: 100vh;
+      position: relative;
+      padding-bottom: 30px;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(90deg, #1B263B, #2D1B4E);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    .header .back-btn {
+      background: rgba(123,44,191,0.2);
+      border: none;
+      color: var(--purple-light);
+      width: 38px; height: 38px;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .header h1 {
+      font-size: 16px;
+      font-weight: 700;
+      flex: 1;
+    }
+
+    /* Home */
+    .home-hero {
+      text-align: center;
+      padding: 40px 20px 30px;
+    }
+    .logo-circle {
+      width: 90px; height: 90px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--purple), var(--blue));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 42px;
+      box-shadow: 0 0 30px rgba(123,44,191,0.45);
+    }
+    .home-hero h2 {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .home-hero p {
+      color: var(--text-sec);
+      font-size: 13px;
+    }
+
+    .chapter-card, .goftar-card, .action-card {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 18px;
+      margin: 0 16px 14px;
+      border: 1.5px solid rgba(123,44,191,0.25);
+      cursor: pointer;
+      transition: all 0.25s;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .chapter-card:hover, .goftar-card:hover, .action-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--purple);
+      box-shadow: 0 8px 25px rgba(123,44,191,0.2);
+    }
+    .chapter-num, .goftar-num {
+      width: 50px; height: 50px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--purple), var(--blue));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; font-weight: 800;
+      flex-shrink: 0;
+    }
+    .card-info h3 { font-size: 15px; font-weight: 700; margin-bottom: 3px; }
+    .card-info span { font-size: 12px; color: var(--text-sec); }
+    .card-arrow { margin-right: auto; color: var(--purple-light); font-size: 18px; }
+
+    .hard-exam-btn {
+      background: linear-gradient(135deg, rgba(123,44,191,0.85), rgba(58,134,255,0.7));
+      border: none;
+      border-radius: 18px;
+      padding: 18px;
+      margin: 20px 16px;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(123,44,191,0.35);
+    }
+    .hard-exam-btn .icon { font-size: 28px; }
+    .hard-exam-btn h3 { font-size: 15px; font-weight: 700; }
+    .hard-exam-btn span { font-size: 12px; opacity: 0.85; }
+
+    /* Progress steps */
+    .steps {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      padding: 20px 16px 10px;
+    }
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      position: relative;
+    }
+    .step-circle {
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      background: var(--card);
+      border: 2px solid rgba(173,181,189,0.3);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; font-weight: 700;
+      z-index: 2;
+    }
+    .step.active .step-circle {
+      background: var(--purple);
+      border-color: var(--purple);
+      color: white;
+    }
+    .step.done .step-circle {
+      background: var(--success);
+      border-color: var(--success);
+      color: white;
+    }
+    .step-label {
+      font-size: 11px;
+      margin-top: 6px;
+      color: var(--text-sec);
+    }
+    .step.active .step-label { color: var(--purple-light); font-weight: 600; }
+    .step-line {
+      position: absolute;
+      top: 17px;
+      right: 50%;
+      width: 100%;
+      height: 2px;
+      background: var(--card);
+      z-index: 1;
+    }
+    .step.done .step-line { background: var(--success); }
+
+    /* Content cards */
+    .content-card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 18px;
+      margin: 12px 16px;
+      border: 1px solid rgba(123,44,191,0.2);
+    }
+    .content-card .card-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .content-card .card-title.blue { color: var(--blue); }
+    .content-card .card-title.yellow { color: var(--warning); }
+    .content-card .body-text {
+      font-size: 14px;
+      line-height: 1.9;
+      white-space: pre-line;
+    }
+
+    /* Image placeholder */
+    .image-box {
+      background: linear-gradient(135deg, rgba(123,44,191,0.25), rgba(58,134,255,0.15));
+      border-radius: 14px;
+      height: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--text-sec);
+      font-size: 13px;
+      gap: 10px;
+    }
+    .image-box .big-icon { font-size: 50px; opacity: 0.7; }
+
+    /* Buttons */
+    .btn-row {
+      display: flex;
+      gap: 10px;
+      padding: 16px;
+      position: sticky;
+      bottom: 0;
+      background: linear-gradient(transparent, #0D1B2A 30%);
+      padding-top: 30px;
+    }
+    .btn {
+      flex: 1;
+      padding: 14px;
+      border-radius: 12px;
+      border: none;
+      font-family: 'Vazirmatn', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .btn-primary {
+      background: var(--purple);
+      color: white;
+      flex: 2;
+    }
+    .btn-primary:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid var(--purple);
+      color: var(--purple-light);
+    }
+
+    /* Quiz */
+    .question-box {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 18px;
+      margin: 0 16px 16px;
+      border: 1.5px solid rgba(123,44,191,0.3);
+      font-size: 15px;
+      line-height: 1.75;
+      font-weight: 500;
+    }
+    .option {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 13px 14px;
+      margin: 0 16px 10px;
+      border: 1.5px solid rgba(123,44,191,0.15);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .option.selected {
+      border-color: var(--purple);
+      background: rgba(123,44,191,0.2);
+    }
+    .option-label {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: var(--secondary);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; font-weight: 700;
+      flex-shrink: 0;
+    }
+    .option.selected .option-label {
+      background: var(--purple);
+    }
+    .progress-bar {
+      height: 5px;
+      background: var(--card);
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--purple);
+      transition: width 0.3s;
+    }
+    .quiz-meta {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: var(--text-sec);
+    }
+    .badge-hard {
+      background: rgba(230,57,70,0.2);
+      color: var(--error);
+      padding: 3px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* Result */
+    .result-hero {
+      margin: 20px 16px;
+      padding: 28px 20px;
+      border-radius: 20px;
+      text-align: center;
+    }
+    .result-hero.good {
+      background: linear-gradient(135deg, rgba(46,196,182,0.25), rgba(58,134,255,0.15));
+      border: 1.5px solid var(--success);
+    }
+    .result-hero.bad {
+      background: linear-gradient(135deg, rgba(230,57,70,0.25), rgba(123,44,191,0.15));
+      border: 1.5px solid var(--error);
+    }
+    .result-hero .score {
+      font-size: 36px;
+      font-weight: 800;
+      margin: 10px 0 4px;
+    }
+    .analysis-card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 16px;
+      margin: 0 16px 12px;
+    }
+    .analysis-card.correct { border: 1px solid rgba(46,196,182,0.5); }
+    .analysis-card.wrong { border: 1px solid rgba(230,57,70,0.5); }
+    .analysis-card .q-num {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .analysis-card .explanation {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--purple-light);
+      line-height: 1.6;
+    }
+
+    .hidden { display: none !important; }
+    .footer-note {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: rgba(173,181,189,0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="app"></div>
+
+  <script>
+    // ===================== DATA =====================
+    const chapters = [
+      {
+        id: 'ch1',
+        title: 'فصل ۱: مولکول‌های اطلاعاتی',
+        goftars: [
+          {
+            id: 'g1',
+            title: 'گفتار ۱: نوکلئیک اسیدها',
+            summary: `اطلاعات وراثتی در مولکول‌هایی به نام نوکلئیک اسید ذخیره می‌شوند. دو نوع نوکلئیک اسید وجود دارد: دِنا (DNA) و رِنا (RNA).
+
+آزمایش‌های مهم:
+• گریفیت نشان داد که ماده‌ای از باکتری‌های کشته‌شده می‌تواند به باکتری‌های زنده منتقل شود و صفت آن‌ها را تغییر دهد (تحول).
+• ایوری و همکارانش با استفاده از آنزیم‌های تجزیه‌کننده ثابت کردند که این ماده دِنا است، نه پروتئین یا رِنا.
+
+ساختار نوکلئیک اسیدها:
+هر نوکلئوتید شامل سه بخش است:
+۱. قند پنج‌کربنی (در دِنا دئوکسی‌ریبوز و در رِنا ریبوز)
+۲. گروه فسفات
+۳. باز نیتروژن‌دار
+
+بازهای پورین: آدنین (A) و گوانین (G)
+بازهای پیریمیدین: تیمین (T)، سیتوزین (C) و اوراسیل (U)
+
+مدل واتسون و کریک:
+• دو رشته پادموازی
+• بازها داخل و قند-فسفات خارج
+• A-T دو پیوند هیدروژنی | G-C سه پیوند هیدروژنی
+• قانون چارگاف: A=T و G=C`,
+            tips: `نکات کنکوری:
+• گریفیت ماده وراثتی را کشف نکرد، فقط وجود آن را نشان داد.
+• ایوری روی عصاره باکتری کار کرد (نه باکتری زنده).
+• تعداد پیوند فسفودی‌استر در هر رشته یکی کمتر از تعداد نوکلئوتیدهاست.
+• اگر تعداد پیوند هیدروژنی را بدهند می‌توان درصد بازها را حساب کرد.
+• رِنا می‌تواند دو رشته‌ای هم باشد (tRNA و rRNA).`,
+            imageDesc: 'ساختار DNA و جفت‌بازها',
+            questions: [
+              {
+                q: 'کدام گزینه درباره آزمایش گریفیت درست است؟',
+                options: ['نشان داد که DNA ماده وراثتی است.', 'نشان داد که ماده وراثتی می‌تواند از یاخته‌ای به یاخته دیگر منتقل شود.', 'با استفاده از آنزیم‌ها ماده وراثتی را شناسایی کرد.', 'فقط روی باکتری‌های زنده کار کرد.'],
+                correct: 1,
+                exp: 'گریفیت فقط پدیده تحول را نشان داد و ماده وراثتی را شناسایی نکرد.'
+              },
+              {
+                q: 'طبق قانون چارگاف، در یک مولکول DNA دو رشته‌ای:',
+                options: ['مقدار A همیشه برابر G است.', 'مقدار A + G برابر T + C است.', 'مقدار A + T همیشه برابر G + C است.', 'مقدار پیوندهای هیدروژنی بین دو رشته ثابت است.'],
+                correct: 1,
+                exp: 'طبق قانون چارگاف A=T و G=C در نتیجه A+G = T+C.'
+              },
+              {
+                q: 'کدام مورد درباره مدل واتسون و کریک نادرست است؟',
+                options: ['دو رشته به صورت پادموازی قرار دارند.', 'بازها در سمت داخل و قند-فسفات در سمت خارج هستند.', 'بین A و T سه پیوند هیدروژنی وجود دارد.', 'مولکول به صورت مارپیچ دو رشته‌ای است.'],
+                correct: 2,
+                exp: 'بین A و T دو پیوند و بین G و C سه پیوند هیدروژنی وجود دارد.'
+              },
+              {
+                q: 'تفاوت اصلی DNA و RNA در کدام مورد است؟',
+                options: ['نوع پیوند بین نوکلئوتیدها', 'نوع قند پنج‌کربنی و یکی از بازهای نیتروژن‌دار', 'وجود اسکلت قند-فسفات', 'امکان تشکیل پیوند هیدروژنی'],
+                correct: 1,
+                exp: 'قند در DNA دئوکسی‌ریبوز و در RNA ریبوز است. همچنین به جای تیمین، اوراسیل دارد.'
+              }
+            ]
+          },
+          {
+            id: 'g2',
+            title: 'گفتار ۲: همانندسازی دِنا',
+            summary: `برای انتقال اطلاعات وراثتی، دِنا باید همانندسازی کند.
+
+طرح‌های همانندسازی:
+• حفاظتی • نیمه حفاظتی (واقعی) • پراکنده
+
+مراحل:
+۱. هلیکاز دو رشته را باز می‌کند (پیوند هیدروژنی).
+۲. پرایماز پرایمر رِنایی می‌سازد.
+۳. دِنا پلیمراز نوکلئوتید اضافه می‌کند (فقط ۵'→۳').
+۴. در رشته پیرو قطعات اوکازاکی ساخته می‌شود.
+۵. لیگاز قطعات را به هم وصل می‌کند.
+
+• پروکاریوت: یک نقطه شروع + دوطرفه
+• یوکاریوت: چندین نقطه شروع
+• دِنا پلیمراز خاصیت ویرایشی هم دارد.`,
+            tips: `نکات کنکوری:
+• هلیکاز پیوند فسفودی‌استر را نمی‌شکند.
+• پرایمر از جنس رِنا است و بعداً حذف می‌شود.
+• در هر دوراهی دو دِنا پلیمراز همزمان کار می‌کنند.
+• لیگاز بیشتر در رشته پیرو فعال است.
+• دِنا پلیمراز نمی‌تواند از صفر شروع کند.`,
+            imageDesc: 'دوراهی همانندسازی DNA',
+            questions: [
+              {
+                q: 'نقش آنزیم هلیکاز چیست؟',
+                options: ['شکستن پیوندهای فسفودی‌استر', 'شکستن پیوندهای هیدروژنی بین دو رشته', 'اتصال قطعات اوکازاکی', 'ساخت پرایمر RNA'],
+                correct: 1,
+                exp: 'هلیکاز فقط پیوندهای هیدروژنی را می‌شکند.'
+              },
+              {
+                q: 'کدام گزینه درباره همانندسازی در پروکاریوت‌ها درست است؟',
+                options: ['چندین نقطه شروع دارند.', 'همانندسازی یک‌طرفه است.', 'فقط یک دوراهی تشکیل می‌شود.', 'از یک نقطه شروع شده و دوطرفه پیش می‌رود.'],
+                correct: 3,
+                exp: 'پروکاریوت‌ها یک نقطه شروع و همانندسازی دوطرفه دارند.'
+              },
+              {
+                q: 'قطعات اوکازاکی در کدام رشته ساخته می‌شوند؟',
+                options: ['رشته پیشرو', 'رشته پیرو', 'هر دو رشته', 'هیچکدام'],
+                correct: 1,
+                exp: 'به دلیل محدودیت جهت کار DNA پلیمراز، فقط در رشته پیرو.'
+              },
+              {
+                q: 'کدام آنزیم هم در همانندسازی و هم در ترمیم نقش دارد؟',
+                options: ['پرایماز', 'لیگاز', 'DNA پلیمراز', 'هلیکاز'],
+                correct: 2,
+                exp: 'DNA پلیمراز خاصیت ویرایشی و ترمیم هم دارد.'
+              }
+            ]
+          },
+          {
+            id: 'g3',
+            title: 'گفتار ۳: پروتئین‌ها',
+            summary: `پروتئین‌ها از آمینواسید ساخته شده‌اند.
+
+چهار سطح ساختاری:
+۱. ساختار اول: ترتیب آمینواسیدها (پیوند پپتیدی)
+۲. ساختار دوم: مارپیچ آلفا و صفحه بتا (پیوند هیدروژنی)
+۳. ساختار سوم: شکل سه‌بعدی (انواع پیوندها)
+۴. ساختار چهارم: چند پلی‌پپتید کنار هم
+
+آنزیم‌ها انرژی فعال‌سازی را کم می‌کنند ولی خودشان مصرف نمی‌شوند.`,
+            tips: `نکات کنکوری:
+• همه پروتئین‌ها ساختار اول دارند، همه ساختار چهارم ندارند.
+• پیوند دی‌سولفیدی فقط بین سیستئین‌هاست.
+• اگر ساختار اول عوض شود بقیه سطوح هم به هم می‌ریزد.
+• دناتوره شدن معمولاً ساختار اول را حفظ می‌کند.`,
+            imageDesc: 'سطوح ساختاری پروتئین',
+            questions: [
+              {
+                q: 'ساختار اول پروتئین‌ها با کدام پیوند پایدار می‌شود؟',
+                options: ['هیدروژنی', 'یونی', 'پپتیدی', 'دی‌سولفیدی'],
+                correct: 2,
+                exp: 'ساختار اول فقط با پیوند پپتیدی تشکیل می‌شود.'
+              },
+              {
+                q: 'کدام سطح ساختاری در همه پروتئین‌ها وجود دارد؟',
+                options: ['ساختار دوم و سوم', 'ساختار اول', 'ساختار سوم و چهارم', 'ساختار چهارم'],
+                correct: 1,
+                exp: 'همه پروتئین‌ها حداقل ساختار اول را دارند.'
+              },
+              {
+                q: 'نقش اصلی آنزیم‌ها چیست؟',
+                options: ['تأمین انرژی واکنش‌ها', 'کاهش انرژی فعال‌سازی', 'تغییر ΔG واکنش', 'مصرف شدن در پایان واکنش'],
+                correct: 1,
+                exp: 'آنزیم‌ها انرژی فعال‌سازی را کم می‌کنند و مصرف نمی‌شوند.'
+              },
+              {
+                q: 'اگر پیوندهای دی‌سولفیدی شکسته شوند، کدام سطح بیشتر تحت تأثیر قرار می‌گیرد؟',
+                options: ['ساختار اول', 'ساختار دوم', 'ساختار سوم و چهارم', 'فقط ساختار چهارم'],
+                correct: 2,
+                exp: 'پیوند دی‌سولفیدی در ساختار سوم و چهارم نقش دارد.'
+              }
+            ]
+          }
+        ],
+        hardExam: [
+          {
+            q: 'در آزمایش‌های ایوری، اگر به جای آنزیم تجزیه‌کننده DNA از آنزیم تجزیه‌کننده پروتئین استفاده می‌شد، چه نتیجه‌ای حاصل می‌شد؟',
+            options: ['انتقال صفت همچنان انجام می‌شد.', 'انتقال صفت متوقف می‌شد.', 'هیچ تغییری مشاهده نمی‌شد.', 'فقط باکتری‌های زنده صفت را دریافت می‌کردند.'],
+            correct: 0,
+            exp: 'آنزیم تجزیه‌کننده پروتئین روی DNA اثر ندارد، پس انتقال ادامه پیدا می‌کند.'
+          },
+          {
+            q: 'کدام گزینه درباره همانندسازی در یوکاریوت‌ها درست است؟',
+            options: ['در هر دوراهی دو DNA پلیمراز همزمان کار می‌کنند.', 'قطعات اوکازاکی در رشته پیشرو ساخته می‌شوند.', 'فقط یک نقطه شروع وجود دارد.', 'هلیکاز پیوند فسفودی‌استر می‌شکند.'],
+            correct: 0,
+            exp: 'در هر دوراهی دو پلیمراز همزمان (یکی پیشرو و یکی پیرو) کار می‌کنند.'
+          },
+          {
+            q: 'کدام گزینه درباره ساختار پروتئین‌ها نادرست است؟',
+            options: ['ساختار سوم با انواع پیوندها پایدار می‌شود.', 'ساختار اول فقط با پیوند پپتیدی است.', 'همه پروتئین‌ها ساختار چهارم دارند.', 'ساختار دوم شامل مارپیچ آلفا و صفحه بتا است.'],
+            correct: 2,
+            exp: 'فقط پروتئین‌های چندرشته‌ای ساختار چهارم دارند.'
+          }
+        ]
+      },
+      {
+        id: 'ch2',
+        title: 'فصل ۲: جریان اطلاعات در یاخته',
+        goftars: [
+          {
+            id: 'g1',
+            title: 'گفتار ۱: رونویسی',
+            summary: `از روی رشته الگوی دِنا، رِنا ساخته می‌شود.
+
+• آنزیم: رِنا پلیمراز
+• به راه‌انداز متصل می‌شود
+• روی الگو در جهت ۳'→۵' حرکت می‌کند
+• رِنا را در جهت ۵'→۳' می‌سازد
+• به جای تیمین، اوراسیل قرار می‌گیرد
+
+در یوکاریوت‌ها:
+• عوامل رونویسی لازم است
+• رونوشت اولیه دارای اینترون و اگزون است → پیرایش`,
+            tips: `نکات کنکوری:
+• رشته الگو مکمل mRNA است.
+• راه‌انداز خودش رونویسی نمی‌شود.
+• پیرایش فقط در یوکاریوت‌ها انجام می‌شود.
+• کلاهک و دم پلی‌آ بعد از رونویسی اضافه می‌شوند.`,
+            imageDesc: 'فرآیند رونویسی',
+            questions: [
+              {
+                q: 'RNA پلیمراز از کدام جهت روی رشته الگو حرکت می‌کند؟',
+                options: ['۵\' به ۳\'', '۳\' به ۵\'', 'هر دو جهت', 'بستگی به ژن دارد'],
+                correct: 1,
+                exp: 'روی رشته الگو در جهت ۳\' به ۵\' حرکت می‌کند.'
+              },
+              {
+                q: 'کدام گزینه درباره رونویسی در یوکاریوت‌ها درست است؟',
+                options: ['رونویسی و ترجمه همزمان انجام می‌شود.', 'RNA پلیمراز مستقیماً به راه‌انداز وصل می‌شود.', 'رونوشت اولیه حاوی اینترون و اگزون است.', 'فقط یک نوع RNA پلیمراز وجود دارد.'],
+                correct: 2,
+                exp: 'در یوکاریوت‌ها رونوشت اولیه اینترون و اگزون دارد.'
+              },
+              {
+                q: 'محصول اولیه رونویسی در یوکاریوت‌ها چه نام دارد؟',
+                options: ['mRNA بالغ', 'tRNA', 'رونوشت اولیه', 'rRNA'],
+                correct: 2,
+                exp: 'محصول اولیه، رونوشت اولیه (pre-mRNA) نام دارد.'
+              },
+              {
+                q: 'برای شروع رونویسی در پروکاریوت‌ها چه چیزی ضروری است؟',
+                options: ['عوامل رونویسی', 'اتصال RNA پلیمراز به راه‌انداز', 'حضور اینترون', 'پیرایش RNA'],
+                correct: 1,
+                exp: 'در پروکاریوت‌ها RNA پلیمراز مستقیماً به راه‌انداز متصل می‌شود.'
+              }
+            ]
+          },
+          {
+            id: 'g2',
+            title: 'گفتار ۲: به سوی پروتئین',
+            summary: `اطلاعات mRNA به پروتئین ترجمه می‌شود.
+
+• هر سه نوکلئوتید = یک کدون
+• کدون شروع: AUG (متیونین)
+• کدون‌های پایان: UAA، UAG، UGA
+
+مولکول‌ها:
+• mRNA حامل پیام
+• tRNA آمینواسید + آنتی‌کدون
+• rRNA در ساختار رناتن
+
+مراحل: آغاز → طویل‌سازی → پایان`,
+            tips: `نکات کنکوری:
+• کدون پایان هیچ tRNAای ندارد.
+• تعداد پیوند پپتیدی = تعداد آمینواسید − ۱
+• جهش بی‌معنی → کوتاه شدن پروتئین
+• کد ژنتیکی تباهی‌دار است.`,
+            imageDesc: 'فرآیند ترجمه روی ریبوزوم',
+            questions: [
+              {
+                q: 'کدون شروع کدام است و چه آمینواسیدی را رمز می‌کند؟',
+                options: ['AUG – متیونین', 'UAC – تیروزین', 'UAA – هیچ‌کدام', 'GUG – والین'],
+                correct: 0,
+                exp: 'کدون شروع AUG است و متیونین را رمز می‌کند.'
+              },
+              {
+                q: 'کدام مولکول هم آنتی‌کدون دارد و هم آمینواسید حمل می‌کند؟',
+                options: ['mRNA', 'tRNA', 'rRNA', 'snRNA'],
+                correct: 1,
+                exp: 'tRNA هم آنتی‌کدون دارد و هم آمینواسید حمل می‌کند.'
+              },
+              {
+                q: 'پیوند پپتیدی در کدام بخش ریبوزوم تشکیل می‌شود؟',
+                options: ['جایگاه A', 'جایگاه P', 'جایگاه E', 'بین جایگاه A و P'],
+                correct: 3,
+                exp: 'بین آمینواسید جایگاه A و زنجیره موجود در P تشکیل می‌شود.'
+              },
+              {
+                q: 'اگر کدون UAC به UAA تغییر کند، چه اتفاقی می‌افتد؟',
+                options: ['دگرمعنی', 'بی‌معنی – توقف زودهنگام', 'خاموش', 'تغییر چارچوب'],
+                correct: 1,
+                exp: 'UAA کدون پایان است → جهش بی‌معنی.'
+              }
+            ]
+          },
+          {
+            id: 'g3',
+            title: 'گفتار ۳: تنظیم بیان ژن',
+            summary: `بیان ژن‌ها تنظیم می‌شود.
+
+اپرون لاکتوز (پروکاریوت):
+• ژن تنظیم‌کننده → مهارکننده می‌سازد
+• بدون لاکتوز: مهارکننده به اپراتور وصل → رونویسی خاموش
+• با لاکتوز: مهارکننده جدا می‌شود → رونویسی روشن
+
+در یوکاریوت‌ها تنظیم پیچیده‌تر و بیشتر در سطح رونویسی است.`,
+            tips: `نکات کنکوری:
+• ژن تنظیم‌کننده جزء اپرون نیست.
+• اپراتور بین راه‌انداز و ژن‌های ساختاری است.
+• در حضور لاکتوز یک mRNA چندژنی ساخته می‌شود.
+• در یوکاریوت‌ها اپرون به شکل پروکاریوتی وجود ندارد.`,
+            imageDesc: 'اپرون لاکتوز',
+            questions: [
+              {
+                q: 'نقش پروتئین مهارکننده در اپرون لاکتوز چیست؟',
+                options: ['اتصال به راه‌انداز', 'اتصال به اپراتور و جلوگیری از رونویسی', 'اتصال به لاکتوز و فعال کردن', 'شکستن لاکتوز'],
+                correct: 1,
+                exp: 'مهارکننده به اپراتور متصل می‌شود و مانع رونویسی می‌گردد.'
+              },
+              {
+                q: 'وقتی لاکتوز وجود دارد:',
+                options: ['مهارکننده به اپراتور وصل می‌شود.', 'شکل مهارکننده عوض شده و از اپراتور جدا می‌شود.', 'ژن‌ها خاموش می‌مانند.', 'RNA پلیمراز نمی‌تواند وصل شود.'],
+                correct: 1,
+                exp: 'لاکتوز به مهارکننده وصل شده و آن را جدا می‌کند.'
+              },
+              {
+                q: 'کدام گزینه درباره تنظیم در یوکاریوت‌ها درست است؟',
+                options: ['بیشتر در سطح رونویسی کنترل می‌شود.', 'اپرون‌ها نقش اصلی دارند.', 'فقط بعد از ترجمه تنظیم می‌شود.', 'عوامل رونویسی وجود ندارند.'],
+                correct: 0,
+                exp: 'در یوکاریوت‌ها تنظیم عمدتاً در سطح رونویسی است.'
+              },
+              {
+                q: 'ژن تنظیم‌کننده در اپرون لاکتوز:',
+                options: ['بخشی از اپرون است.', 'خارج از اپرون است و دائماً مهارکننده می‌سازد.', 'فقط با لاکتوز فعال می‌شود.', 'محصول آن آنزیم تجزیه لاکتوز است.'],
+                correct: 1,
+                exp: 'ژن تنظیم‌کننده خارج از اپرون است و همیشه مقدار کمی مهارکننده تولید می‌کند.'
+              }
+            ]
+          }
+        ],
+        hardExam: [
+          {
+            q: 'اگر راه‌انداز یک ژن یوکاریوتی کاملاً حذف شود، چه اتفاقی می‌افتد؟',
+            options: ['رونویسی انجام نمی‌شود ولی ترجمه از mRNA قبلی ممکن است.', 'RNA پلیمراز از نقطه تصادفی شروع می‌کند.', 'عوامل رونویسی نمی‌توانند وصل شوند و رونویسی متوقف می‌ماند.', 'فقط ژن‌های مجاور تحت تأثیر قرار می‌گیرند.'],
+            correct: 2,
+            exp: 'راه‌انداز محل اتصال عوامل رونویسی است.'
+          },
+          {
+            q: 'اگر کدون UGG (تریپتوفان) به UGA تغییر کند، چه نوع جهشی است؟',
+            options: ['بی‌معنی – کوتاه شدن پروتئین', 'دگرمعنی', 'خاموش', 'تغییر چارچوب'],
+            correct: 0,
+            exp: 'UGA کدون پایان است → جهش بی‌معنی.'
+          },
+          {
+            q: 'کدام گزینه درباره اپرون لاکتوز نادرست است؟',
+            options: ['در حضور لاکتوز مهارکننده از اپراتور جدا می‌شود.', 'ژن تنظیم‌کننده دائماً مهارکننده می‌سازد.', 'با لاکتوز هر سه ژن ساختاری رونویسی می‌شوند.', 'مهارکننده به راه‌انداز وصل می‌شود.'],
+            correct: 3,
+            exp: 'مهارکننده به اپراتور وصل می‌شود نه راه‌انداز.'
+          }
+        ]
+      }
+    ];
+
+    // ===================== STATE =====================
+    let state = {
+      page: 'home',          // home | chapter | goftar | quiz | result
+      chapterIndex: 0,
+      goftarIndex: 0,
+      step: 0,               // 0: lesson, 1: image, 2: quiz
+      quizIndex: 0,
+      answers: [],
+      isHard: false,
+      questions: []
+    };
+
+    // ===================== RENDER =====================
+    function render() {
+      const app = document.getElementById('app');
+      if (state.page === 'home') app.innerHTML = renderHome();
+      else if (state.page === 'chapter') app.innerHTML = renderChapter();
+      else if (state.page === 'goftar') app.innerHTML = renderGoftar();
+      else if (state.page === 'quiz') app.innerHTML = renderQuiz();
+      else if (state.page === 'result') app.innerHTML = renderResult();
+    }
+
+    function renderHome() {
+      return `
+        <div class="home-hero">
+          <div class="logo-circle">🧬</div>
+          <h2>زیست خیلی آسان</h2>
+          <p>زیست دوازدهم به روش دکتر علی تهرانی و رفضا</p>
+        </div>
+        ${chapters.map((ch, i) => `
+          <div class="chapter-card" onclick="openChapter(${i})">
+            <div class="chapter-num">${i + 1}</div>
+            <div class="card-info">
+              <h3>${ch.title}</h3>
+              <span>${ch.goftars.length} گفتار + آزمون جامع</span>
+            </div>
+            <div class="card-arrow">‹</div>
+          </div>
+        `).join('')}
+        <div class="footer-note">نسخه وب ۱.۰ • مخصوص کنکور</div>
+      `;
+    }
+
+    function renderChapter() {
+      const ch = chapters[state.chapterIndex];
+      return `
+        <div class="header">
+          <button class="back-btn" onclick="goHome()">›</button>
+          <h1>${ch.title}</h1>
+        </div>
+        <div style="padding:16px 16px 8px;font-size:14px;font-weight:700;color:var(--purple-light)">گفتارهای فصل</div>
+        ${ch.goftars.map((g, i) => `
+          <div class="goftar-card" onclick="openGoftar(${i})">
+            <div class="goftar-num" style="width:42px;height:42px;font-size:16px">${i + 1}</div>
+            <div class="card-info">
+              <h3>${g.title}</h3>
+            </div>
+            <div class="card-arrow">▶</div>
+          </div>
+        `).join('')}
+        <button class="hard-exam-btn" onclick="startHardExam()">
+          <div class="icon">🏆</div>
+          <div>
+            <h3>آزمون جامع سطح سخت</h3>
+            <span>بعد از تمام کردن همه گفتارها پیشنهاد می‌شود</span>
+          </div>
+        </button>
+      `;
+    }
+
+    function renderGoftar() {
+      const g = chapters[state.chapterIndex].goftars[state.goftarIndex];
+      const steps = ['درسنامه', 'تصویر', 'آزمون'];
+      return `
+        <div class="header">
+          <button class="back-btn" onclick="backToChapter()">›</button>
+          <h1>${g.title}</h1>
+        </div>
+        <div class="steps">
+          ${steps.map((s, i) => `
+            <div class="step ${i === state.step ? 'active' : ''} ${i < state.step ? 'done' : ''}">
+              ${i > 0 ? '<div class="step-line"></div>' : ''}
+              <div class="step-circle">${i < state.step ? '✓' : i + 1}</div>
+              <div class="step-label">${s}</div>
+            </div>
+          `).join('')}
+        </div>
+        ${state.step === 0 ? `
+          <div class="content-card">
+            <div class="card-title blue">📖 خلاصه گفتار</div>
+            <div class="body-text">${g.summary}</div>
+          </div>
+          <div class="content-card">
+            <div class="card-title yellow">💡 نکات کنکوری</div>
+            <div class="body-text">${g.tips}</div>
+          </div>
+        ` : `
+          <div class="content-card">
+            <div class="card-title blue">🖼️ تصویر تحلیلی</div>
+            <div class="image-box">
+              <div class="big-icon">🔬</div>
+              <div>${g.imageDesc}</div>
+              <div style="font-size:11px;opacity:0.6">عکس‌های تحلیلی ساخته‌شده<br>را می‌توانید اینجا قرار دهید</div>
+            </div>
+          </div>
+        `}
+        <div class="btn-row">
+          ${state.step > 0 ? `<button class="btn btn-outline" onclick="prevStep()">قبلی</button>` : ''}
+          <button class="btn btn-primary" onclick="nextStep()">
+            ${state.step === 0 ? 'بعدی: تصویر تحلیلی' : 'شروع آزمون'}
+          </button>
+        </div>
+      `;
+    }
+
+    function renderQuiz() {
+      const qs = state.questions;
+      const q = qs[state.quizIndex];
+      const labels = ['الف', 'ب', 'ج', 'د'];
+      const selected = state.answers[state.quizIndex];
+      return `
+        <div class="header">
+          <button class="back-btn" onclick="backFromQuiz()">›</button>
+          <h1>${state.isHard ? 'آزمون جامع سخت' : 'آزمون گفتار'}</h1>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width:${((state.quizIndex + 1) / qs.length) * 100}%"></div>
+        </div>
+        <div class="quiz-meta">
+          <span>سوال ${state.quizIndex + 1} از ${qs.length}</span>
+          ${state.isHard ? '<span class="badge-hard">سطح سخت</span>' : ''}
+        </div>
+        <div class="question-box">${q.q}</div>
+        ${q.options.map((opt, i) => `
+          <div class="option ${selected === i ? 'selected' : ''}" onclick="selectAnswer(${i})">
+            <div class="option-label">${labels[i]}</div>
+            <div>${opt}</div>
+          </div>
+        `).join('')}
+        <div class="btn-row">
+          ${state.quizIndex > 0 ? `<button class="btn btn-outline" onclick="prevQuestion()">قبلی</button>` : ''}
+          <button class="btn btn-primary" ${selected === undefined || selected === null ? 'disabled' : ''} onclick="nextQuestion()">
+            ${state.quizIndex === qs.length - 1 ? 'مشاهده نتیجه' : 'سوال بعدی'}
+          </button>
+        </div>
+      `;
+    }
+
+    function renderResult() {
+      const qs = state.questions;
+      let score = 0;
+      qs.forEach((q, i) => { if (state.answers[i] === q.correct) score++; });
+      const percent = Math.round(score / qs.length * 100);
+      const good = percent >= 70;
+      const labels = ['الف', 'ب', 'ج', 'د'];
+      return `
+        <div class="header">
+          <h1>نتیجه و تحلیل آزمون</h1>
+        </div>
+        <div class="result-hero ${good ? 'good' : 'bad'}">
+          <div style="font-size:40px">${good ? '🎉' : '💪'}</div>
+          <div class="score">${score} از ${qs.length}</div>
+          <div style="font-size:18px;color:var(--text-sec)">${percent}٪</div>
+          <div style="margin-top:8px;font-size:14px">${good ? 'عالی بودی! ادامه بده' : 'نیاز به مرور بیشتر داری، ناامید نشو!'}</div>
+        </div>
+        ${qs.map((q, i) => {
+          const user = state.answers[i];
+          const correct = user === q.correct;
+          return `
+            <div class="analysis-card ${correct ? 'correct' : 'wrong'}">
+              <div class="q-num">
+                <span>${correct ? '✅' : '❌'}</span>
+                <span>سوال ${i + 1}</span>
+              </div>
+              <div style="font-size:13px;color:var(--text-sec);margin-bottom:8px;line-height:1.6">${q.q}</div>
+              <div style="font-size:13px;color:var(--success);font-weight:700">پاسخ صحیح: ${labels[q.correct]}</div>
+              ${!correct && user !== undefined ? `<div style="font-size:13px;color:var(--error)">پاسخ شما: ${labels[user]}</div>` : ''}
+              <div class="explanation">${q.exp}</div>
+            </div>
+          `;
+        }).join('')}
+        <div class="btn-row">
+          <button class="btn btn-primary" onclick="backToChapter()">بازگشت به فصل</button>
+        </div>
+      `;
+    }
+
+    // ===================== ACTIONS =====================
+    function openChapter(i) {
+      state.chapterIndex = i;
+      state.page = 'chapter';
+      render();
+      window.scrollTo(0, 0);
+    }
+    function goHome() {
+      state.page = 'home';
+      render();
+      window.scrollTo(0, 0);
+    }
+    function openGoftar(i) {
+      state.goftarIndex = i;
+      state.step = 0;
+      state.page = 'goftar';
+      render();
+      window.scrollTo(0, 0);
+    }
+    function backToChapter() {
+      state.page = 'chapter';
+      render();
+      window.scrollTo(0, 0);
+    }
+    function nextStep() {
+      if (state.step === 0) {
+        state.step = 1;
+        render();
+        window.scrollTo(0, 0);
+      } else {
+        // start quiz
+        const g = chapters[state.chapterIndex].goftars[state.goftarIndex];
+        state.questions = g.questions;
+        state.answers = new Array(g.questions.length).fill(null);
+        state.quizIndex = 0;
+        state.isHard = false;
+        state.page = 'quiz';
+        render();
+        window.scrollTo(0, 0);
+      }
+    }
+    function prevStep() {
+      state.step = 0;
+      render();
+      window.scrollTo(0, 0);
+    }
+    function startHardExam() {
+      const ch = chapters[state.chapterIndex];
+      state.questions = ch.hardExam;
+      state.answers = new Array(ch.hardExam.length).fill(null);
+      state.quizIndex = 0;
+      state.isHard = true;
+      state.page = 'quiz';
+      render();
+      window.scrollTo(0, 0);
+    }
+    function selectAnswer(i) {
+      state.answers[state.quizIndex] = i;
+      render();
+    }
+    function nextQuestion() {
+      if (state.quizIndex < state.questions.length - 1) {
+        state.quizIndex++;
+        render();
+        window.scrollTo(0, 0);
+      } else {
+        state.page = 'result';
+        render();
+        window.scrollTo(0, 0);
+      }
+    }
+    function prevQuestion() {
+      if (state.quizIndex > 0) {
+        state.quizIndex--;
+        render();
+        window.scrollTo(0, 0);
+      }
+    }
+    function backFromQuiz() {
+      if (state.isHard) backToChapter();
+      else {
+        state.page = 'goftar';
+        state.step = 1;
+        render();
+      }
+    }
+
+    // Init
+    render();
+
+    // PWA Service Worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('Service Worker registered:', reg.scope))
+          .catch(err => console.log('SW registration failed:', err));
+      });
+    }
+  </script>
+</body>
+</html>
